@@ -34,12 +34,12 @@ const PEOPLE = [
     {
         slug: 'claire-stones',
         name: 'Claire Stones FPFS',
-        role: 'Senior Partner',
+        role: 'Practice Partner',
         location: 'Leeds',
         photo: '../images/people/Claire Stones.jpg',
         linkedin: 'https://www.linkedin.com/in/claire-stones-31657560/',
         summary: [
-            'Claire is a senior partner at Family Capital and heads up the firm\'s Leeds office. A chartered financial planner with over twenty-five years of experience, she works closely with families on long-term planning — particularly around trusts, estate planning, and the structures that help protect wealth across generations.',
+            'Claire is a practice partner at Family Capital and heads up the firm\'s Leeds office. A chartered financial planner with over twenty-five years of experience, she runs her own office with her own team, working closely with families on long-term planning — particularly around trusts, estate planning, and the structures that help protect wealth across generations.',
             'She joined Family Capital in 2024, merging her own established practice into the firm. It was a natural fit — the same values, the same client-first approach, just with more behind it.'
         ],
         office: {
@@ -50,7 +50,7 @@ const PEOPLE = [
         },
         experience: [
             'Claire ran her own financial planning practice for ten years before joining Family Capital. During that time, she built a loyal client base and a reputation for taking the time to properly understand people\'s lives before making recommendations.',
-            'In September 2024, she merged her practice with Family Capital to open and lead the firm\'s Leeds office as senior partner. The move brought her clients the benefit of a wider team and deeper resources, while keeping the personal relationship that mattered to them.',
+            'In September 2024, she merged her practice with Family Capital to open and lead the firm\'s Leeds office as practice partner. The move brought her clients the benefit of a wider team and deeper resources, while keeping the personal relationship that mattered to them.',
             'Claire\'s focus has always been on families — helping people think about wealth in the round, not just as a set of accounts. Trusts, estate planning, pensions, and the way everything connects together. She believes good financial planning starts with listening, not selling.',
             'She is a Fellow of the Personal Finance Society and a Chartered Financial Planner.'
         ]
