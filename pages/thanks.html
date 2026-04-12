@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank you for getting in touch with Family Capital.">
+    <title>Thank You | Family Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .thanks-section {
+            padding-top: calc(var(--nav-height) + 4rem);
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .thanks-content {
+            opacity: 0;
+            transform: translateY(15px);
+            animation: slideUp 0.5s ease-out 1.2s both;
+        }
+
+        .thanks-content h1 {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .thanks-content p {
+            font-size: 1.1rem;
+            color: var(--text-grey);
+            max-width: 500px;
+            margin: 0 auto 2rem;
+            line-height: 1.7;
+        }
+
+        .thanks-btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border: 1px solid var(--navy);
+            color: var(--navy);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: all 0.2s ease;
+            margin-top: 1rem;
+        }
+
+        .thanks-btn:hover {
+            background: var(--navy);
+            color: white;
+        }
+
+        .thanks-content {
+            margin-bottom: 4rem;
+        }
+
+        /* ===== Success Animation (ported from Perpetual) ===== */
+        .success-animation {
+            text-align: center;
+            position: relative;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .checkmark-container {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .checkmark {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: block;
+            stroke-width: 2;
+            stroke: #3b82f6;
+            stroke-miterlimit: 10;
+            animation: cmScale 0.3s ease-in-out 0.9s both;
+        }
+
+        .checkmark-circle {
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            stroke-width: 2;
+            stroke-miterlimit: 10;
+            stroke: #3b82f6;
+            fill: none;
+            animation: cmStroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+        }
+
+        .checkmark-check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            stroke-width: 3;
+            animation: cmStroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+        }
+
+        @keyframes cmStroke {
+            100% { stroke-dashoffset: 0; }
+        }
+
+        @keyframes cmScale {
+            0%, 100% { transform: none; }
+            50% { transform: scale3d(1.1, 1.1, 1); }
+        }
+
+        /* Particles */
+        .particles {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 200px;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 1.25rem;
+            opacity: 0;
+            animation: explode 1s ease-out forwards;
+        }
+
+        .p0  { animation-delay: 0.8s;  --angle: 0deg;   --dist: 70px; }
+        .p1  { animation-delay: 0.85s; --angle: 30deg;  --dist: 80px; }
+        .p2  { animation-delay: 0.9s;  --angle: 60deg;  --dist: 75px; }
+        .p3  { animation-delay: 0.95s; --angle: 90deg;  --dist: 85px; }
+        .p4  { animation-delay: 1s;    --angle: 120deg; --dist: 70px; }
+        .p5  { animation-delay: 1.05s; --angle: 150deg; --dist: 80px; }
+        .p6  { animation-delay: 1.1s;  --angle: 180deg; --dist: 75px; }
+        .p7  { animation-delay: 1.15s; --angle: 210deg; --dist: 85px; }
+        .p8  { animation-delay: 1.2s;  --angle: 240deg; --dist: 70px; }
+        .p9  { animation-delay: 1.25s; --angle: 270deg; --dist: 80px; }
+        .p10 { animation-delay: 1.3s;  --angle: 300deg; --dist: 75px; }
+        .p11 { animation-delay: 1.35s; --angle: 330deg; --dist: 85px; }
+
+        @keyframes explode {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) rotate(var(--angle)) translateY(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) rotate(var(--angle)) translateY(calc(var(--dist) * -1));
+            }
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav class="site-nav scrolled">
+        <a href="../" class="nav-logo"><img src="../images/pwg-logo.png" alt="Family Capital"></a>
+        <ul class="nav-links">
+            <li><a href="../">Home</a></li>
+            <li class="nav-dropdown">
+                <a href="about.html" class="nav-dropdown-toggle">About Us</a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="cyber-security.html">Cyber Security</a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <a href="what-we-do.html" class="nav-dropdown-toggle">What We Do</a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="what-we-do.html">Holistic Financial Planning</a></li>
+                    <li><a href="industry-professionals.html">Industry Professionals</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                </ul>
+            </li>
+            <li><a href="people.html">Team</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </nav>
+
+    <section class="thanks-section">
+        <div class="container">
+            <!-- Success animation -->
+            <div class="success-animation">
+                <div class="checkmark-container">
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark-check" fill="none" d="m14.1 27.2 7.1 7.2 16.7-16.8"/>
+                    </svg>
+                </div>
+                <div class="particles">
+                    <div class="particle p0">✨</div>
+                    <div class="particle p1">✨</div>
+                    <div class="particle p2">✨</div>
+                    <div class="particle p3">✨</div>
+                    <div class="particle p4">✨</div>
+                    <div class="particle p5">✨</div>
+                    <div class="particle p6">✨</div>
+                    <div class="particle p7">✨</div>
+                    <div class="particle p8">✨</div>
+                    <div class="particle p9">✨</div>
+                    <div class="particle p10">✨</div>
+                    <div class="particle p11">✨</div>
+                </div>
+            </div>
+
+            <!-- Message -->
+            <div class="thanks-content">
+                <h1 id="thanks-title">Message sent</h1>
+                <p id="thanks-message">Thank you for getting in touch. We'll be in contact shortly.</p>
+                <a href="../" class="thanks-btn">Back to Family Capital</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/pwg-logo.png" alt="Family Capital" style="height: 60px; margin-bottom: 0.5rem;">
+                    <p>Wealth management for families and entrepreneurs.</p>
+                    <p style="font-size: 0.8rem; font-style: italic; color: rgba(255,255,255,0.4); margin-top: 0.5rem;">Constantly improving. Never standing still.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="what-we-do.html">What We Do</a></li>
+                        <li><a href="people.html">Team</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="cyber-security.html">Cyber Security</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://www.wealthportal.co.uk/">Client Login</a></li>
+                        <li><a href="timeline.html">Our Timeline</a></li>
+                        <li><a href="eight-aspects.html">Eight Aspects</a></li>
+                        <li><a href="industry-professionals.html">Industry Professionals</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-regulatory">
+                    <p>
+                        Issued by Family Capital Limited (<a href="https://find-and-update.company-information.service.gov.uk/company/10457142" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Company No. 10457142</a>, FCA Ref. 765457), which is authorised and regulated by the <a href="https://register.fca.org.uk/s/firm?id=001b000003ZclGNAAZ" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Financial Conduct Authority</a>.
+                    </p>
+                    <div class="footer-legal-links">
+                        <a href="important-info.html">Important Information</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="modern-slavery.html">Modern Slavery Statement</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>
+        (function() {
+            const params = new URLSearchParams(window.location.search);
+            const adviser = params.get('adviser');
+            const files = params.get('files');
+
+            // Title — acknowledge attachments
+            if (files && parseInt(files) > 0) {
+                document.getElementById('thanks-title').textContent = 'Message sent. Attachments received.';
+            }
+
+            // Message — personalise for adviser
+            if (adviser) {
+                const names = {
+                    'ian-cooke': 'Ian',
+                    'claire-stones': 'Claire',
+                    'simon-andrews': 'Simon',
+                    'george-boyd-jones': 'George',
+                    'sam-shah': 'Sam',
+                    'james-wallace': 'James',
+                    'brian-potter': 'Brian',
+                    'richard-martin': 'Richard',
+                    'mandy-mugridge': 'Mandy'
+                };
+                const name = names[adviser];
+                if (name) {
+                    document.getElementById('thanks-message').textContent =
+                        'Thank you for getting in touch. ' + name + ' will be in contact with you shortly.';
+                }
+            }
+        })();
+    </script>
+</body>
+</html>

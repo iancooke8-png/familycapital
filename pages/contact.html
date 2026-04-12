@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Family Capital — get in touch with our team.">
+    <title>Contact Us | Family Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        /* Form */
+        .contact-form h2 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form-intro {
+            font-size: 1rem;
+            color: var(--text-grey);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .form-group {
+            margin-bottom: 0.8rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-grey);
+            margin-bottom: 0.4rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            background: var(--white);
+            border: 1px solid #d1d5db;
+            outline: none;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--accent);
+        }
+
+        .form-group textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+        }
+
+        /* File upload */
+        .form-upload {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-upload label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-grey);
+            margin-bottom: 0.4rem;
+        }
+
+        .upload-area {
+            border: 2px dashed #d1d5db;
+            padding: 1rem;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color 0.2s ease, background 0.2s ease;
+        }
+
+        .upload-area:hover {
+            border-color: var(--accent);
+            background: rgba(59, 130, 246, 0.03);
+        }
+
+        .upload-area.drag-over {
+            border-color: var(--accent);
+            background: rgba(59, 130, 246, 0.05);
+            transform: scale(1.01);
+        }
+
+        .upload-area p {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+            margin-bottom: 0.3rem;
+        }
+
+        .upload-area span {
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        .upload-area input[type="file"] {
+            display: none;
+        }
+
+        .upload-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.3rem;
+            opacity: 0.4;
+        }
+
+        /* File chips */
+        .file-chip {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.3rem;
+            padding: 0.4rem;
+            background: #f1f5f9;
+            border-radius: 8px;
+            animation: chipIn 0.3s ease both;
+            width: 72px;
+            height: 88px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .file-chip-icon {
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            line-height: 1;
+            background: white;
+            border-radius: 6px;
+        }
+
+        .file-chip-thumb {
+            width: 56px;
+            height: 56px;
+            object-fit: cover;
+            border-radius: 6px;
+            display: block;
+        }
+
+        .file-chip-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            font-size: 0.6rem;
+            color: #64748b;
+            padding: 0 2px;
+        }
+
+        @keyframes chipIn {
+            from { opacity: 0; transform: translateY(8px) scale(0.85); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        /* Submit animation */
+        .form-submit {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit.sending {
+            pointer-events: none;
+            background: var(--accent);
+            border-color: var(--accent);
+            padding-left: 3rem;
+        }
+
+        .form-submit.sending::before {
+            content: '';
+            position: absolute;
+            left: 1.2rem;
+            top: 50%;
+            width: 16px;
+            height: 16px;
+            margin-top: -8px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .form-submit {
+            display: inline-block;
+            padding: 0.9rem 2.4rem;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            background: var(--navy);
+            color: var(--white);
+            border: 1px solid var(--navy);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .form-submit:hover {
+            background: var(--navy-light);
+            transform: translateY(-2px);
+        }
+
+        /* Office details */
+        .contact-offices h2 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--navy);
+            margin-bottom: 2rem;
+        }
+
+        .office-card {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .office-card:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .office-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            color: var(--navy);
+            margin-bottom: 0.8rem;
+        }
+
+        .office-card p {
+            font-size: 0.95rem;
+            color: #334155;
+            line-height: 1.7;
+            margin-bottom: 0.4rem;
+        }
+
+        .office-card a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .office-card a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-note {
+            margin-top: 2rem;
+            padding: 1.2rem 1.5rem;
+            background: var(--off-white);
+            border-left: 3px solid var(--accent);
+            font-size: 0.9rem;
+            color: #334155;
+            line-height: 1.7;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="site-nav scrolled">
+        <a href="../" class="nav-logo">
+            <img src="../images/pwg-logo.png" alt="Family Capital">
+        </a>
+        <ul class="nav-links">
+            <li><a href="../">Home</a></li>
+            <li class="nav-dropdown">
+                <a href="about.html" class="nav-dropdown-toggle">About Us</a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="cyber-security.html">Cyber Security</a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <a href="what-we-do.html" class="nav-dropdown-toggle">What We Do</a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="what-we-do.html">Holistic Financial Planning</a></li>
+                    <li><a href="industry-professionals.html">Industry Professionals</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                </ul>
+            </li>
+            <li><a href="people.html">Team</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Contact -->
+    <section class="section" style="padding-top: calc(var(--nav-height) + 3rem);">
+        <div class="container">
+            <div class="contact-layout">
+
+                <!-- Form -->
+                <div class="contact-form">
+                    <h2>Get in touch</h2>
+                    <p class="contact-form-intro">Whether you're an existing client, a prospective one, or an industry professional — we'd be happy to hear from you.</p>
+
+                    <form action="https://formspree.io/f/xnjlajjq" method="POST" enctype="multipart/form-data">
+                        <input type="hidden" name="_next" value="https://iancooke8-png.github.io/websites/family-capital/pages/thanks.html">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="enquiry-type">I am</label>
+                                <select id="enquiry-type" name="enquiry-type">
+                                    <option value="">Please select...</option>
+                                    <option value="prospective">A prospective client</option>
+                                    <option value="existing">An existing client</option>
+                                    <option value="professional">An industry professional</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"></textarea>
+                        </div>
+
+                        <div class="form-upload">
+                            <label>Attachments</label>
+                            <div class="upload-area" id="upload-area" onclick="document.getElementById('file-upload').click();">
+                                <div id="upload-prompt">
+                                    <div class="upload-icon">&#128206;</div>
+                                    <p>Drop files here or click to upload</p>
+                                    <span>PDF, spreadsheets, scans, images</span>
+                                </div>
+                                <div id="file-list" style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;"></div>
+                                <input type="file" id="file-upload" name="attachments" multiple accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.jpg,.jpeg,.png">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="form-submit">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Office details -->
+                <div class="contact-offices">
+                    <h2>Our offices</h2>
+
+                    <div class="office-card">
+                        <h3>Head Office</h3>
+                        <p>68 King William Street<br>London EC4N 7HR</p>
+                        <p>0207 082 5650</p>
+                        <p><a href="mailto:info@familycapital.co.uk">info@familycapital.co.uk</a></p>
+                    </div>
+
+                    <p style="font-size: 0.9rem; color: var(--text-grey);">We also have offices in <a href="locations.html" style="color: var(--accent); text-decoration: none;">Leeds and other locations</a>.</p>
+
+                    <div class="contact-note">
+                        Know who you'd like to speak to? Contact them directly from their <a href="people.html">team profile</a>. Existing clients can also use <a href="https://www.wealthportal.co.uk/">secure messaging</a> in the Wealth Portal.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/pwg-logo.png" alt="Family Capital" style="height: 60px; margin-bottom: 0.5rem;">
+                    <p>Wealth management for families and entrepreneurs.</p>
+                    <p style="font-size: 0.8rem; font-style: italic; color: rgba(255,255,255,0.4); margin-top: 0.5rem;">Constantly improving. Never standing still.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="what-we-do.html">What We Do</a></li>
+                        <li><a href="people.html">Team</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="cyber-security.html">Cyber Security</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://www.wealthportal.co.uk/">Client Login</a></li>
+                        <li><a href="timeline.html">Our Timeline</a></li>
+                        <li><a href="eight-aspects.html">Eight Aspects</a></li>
+                        <li><a href="industry-professionals.html">Industry Professionals</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-regulatory">
+                    <p>
+                        Issued by Family Capital Limited (<a href="https://find-and-update.company-information.service.gov.uk/company/10457142" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Company No. 10457142</a>, FCA Ref. 765457), which is authorised and regulated by the <a href="https://register.fca.org.uk/s/firm?id=001b000003ZclGNAAZ" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Financial Conduct Authority</a>.
+                    </p>
+                    <div class="footer-legal-links">
+                        <a href="important-info.html">Important Information</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="modern-slavery.html">Modern Slavery Statement</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        (function() {
+            const uploadArea = document.getElementById('upload-area');
+            const fileInput = document.getElementById('file-upload');
+            const fileList = document.getElementById('file-list');
+            const form = document.querySelector('form');
+            const submitBtn = document.querySelector('.form-submit');
+            const allFiles = new DataTransfer();
+
+            // File type icons
+            function getFileIcon(name) {
+                const ext = name.split('.').pop().toLowerCase();
+                if (['pdf'].includes(ext)) return '📄';
+                if (['doc', 'docx'].includes(ext)) return '📋';
+                if (['xls', 'xlsx', 'csv'].includes(ext)) return '📊';
+                if (['jpg', 'jpeg', 'png', 'gif'].includes(ext)) return '📷';
+                return '📎';
+            }
+
+            function isImage(name) {
+                const ext = name.split('.').pop().toLowerCase();
+                return ['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext);
+            }
+
+            function updateFileList() {
+                fileList.innerHTML = '';
+                const prompt = document.getElementById('upload-prompt');
+                if (!allFiles.files.length) {
+                    prompt.style.display = '';
+                    return;
+                }
+                prompt.style.display = 'none';
+
+                Array.from(allFiles.files).forEach((f, i) => {
+                    const chip = document.createElement('div');
+                    chip.className = 'file-chip';
+                    chip.style.animationDelay = (i * 0.08) + 's';
+
+                    if (isImage(f.name)) {
+                        const img = document.createElement('img');
+                        img.className = 'file-chip-thumb';
+                        const reader = new FileReader();
+                        reader.onload = function(e) { img.src = e.target.result; };
+                        reader.readAsDataURL(f);
+                        chip.appendChild(img);
+                    } else {
+                        const icon = document.createElement('span');
+                        icon.className = 'file-chip-icon';
+                        icon.textContent = getFileIcon(f.name);
+                        chip.appendChild(icon);
+                    }
+
+                    const name = document.createElement('span');
+                    name.className = 'file-chip-name';
+                    name.textContent = f.name;
+                    chip.appendChild(name);
+
+                    fileList.appendChild(chip);
+                });
+            }
+
+            function addFiles(newFiles) {
+                Array.from(newFiles).forEach(f => allFiles.items.add(f));
+                fileInput.files = allFiles.files;
+                updateFileList();
+            }
+
+            // Click to upload
+            fileInput.addEventListener('change', function() {
+                // When clicking, add to accumulated files
+                const newDt = new DataTransfer();
+                Array.from(allFiles.files).forEach(f => newDt.items.add(f));
+                Array.from(this.files).forEach(f => newDt.items.add(f));
+                allFiles.items.clear();
+                Array.from(newDt.files).forEach(f => allFiles.items.add(f));
+                fileInput.files = allFiles.files;
+                updateFileList();
+            });
+
+            // Drag and drop
+            uploadArea.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                this.classList.add('drag-over');
+            });
+
+            uploadArea.addEventListener('dragleave', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                this.classList.remove('drag-over');
+            });
+
+            uploadArea.addEventListener('drop', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                this.classList.remove('drag-over');
+                if (e.dataTransfer.files.length) {
+                    addFiles(e.dataTransfer.files);
+                }
+            });
+
+            // Submit — update redirect URL with file count, then animate
+            form.addEventListener('submit', function() {
+                const nextField = form.querySelector('input[name="_next"]');
+                if (nextField && allFiles.files.length > 0) {
+                    const url = new URL(nextField.value);
+                    url.searchParams.set('files', allFiles.files.length);
+                    nextField.value = url.toString();
+                }
+                submitBtn.classList.add('sending');
+                submitBtn.textContent = 'Sending...';
+            });
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eight aspects of holistic financial planning. Most firms start at step 6. We start at step 1.">
+    <title>Eight Aspects | Family Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .eyebrow {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .aspects-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .aspect-card {
+            background: var(--white);
+            border: 0.5px solid rgba(0,0,0,0.12);
+            border-radius: 12px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            display: block;
+        }
+
+        .aspect-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        .aspect-number {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.8rem;
+        }
+
+        .aspect-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.2rem;
+            font-size: 1.5rem;
+        }
+
+        .aspect-card h3 {
+            font-size: 1.2rem;
+            color: var(--navy);
+            margin-bottom: 0.4rem;
+        }
+
+        .aspect-card p {
+            font-size: 0.85rem;
+            color: var(--text-grey);
+            line-height: 1.6;
+        }
+
+        .tier-row {
+            margin-bottom: 1rem;
+        }
+
+        .tier-label {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            color: var(--navy);
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .footer-note {
+            text-align: center;
+            padding: 2rem 0 0;
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            color: var(--navy);
+        }
+
+        @media (max-width: 768px) {
+            .aspects-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 480px) {
+            .aspects-grid { grid-template-columns: 1fr; max-width: 320px; margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="site-nav scrolled">
+        <a href="../" class="nav-logo">
+            <img src="../images/pwg-logo.png" alt="Family Capital">
+        </a>
+                <ul class="nav-links">
+            <li><a href="../">Home</a></li>
+            <li class="nav-dropdown">
+                <a href="about.html" class="nav-dropdown-toggle">About Us</a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="cyber-security.html">Cyber Security</a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <a href="what-we-do.html" class="nav-dropdown-toggle">What We Do</a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="what-we-do.html">Holistic Financial Planning</a></li>
+                    <li><a href="industry-professionals.html">Industry Professionals</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                </ul>
+            </li>
+            <li><a href="people.html">Team</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Header -->
+    <div class="page-header">
+        <div class="container">
+            <div class="eyebrow" style="color: var(--muted-blue);">Our framework</div>
+            <h1>Eight aspects. In order.</h1>
+            <p class="subtitle" style="max-width: 600px; margin: 1rem auto 0; line-height: 1.7;">
+                This isn't a menu — it's a sequence. Each step builds on the last. Most firms skip straight to step six. We start at one.
+            </p>
+        </div>
+    </div>
+
+    <!-- Tier 1: Clear the deck -->
+    <section class="section">
+        <div class="container">
+            <div class="tier-row">
+                <div class="tier-label">Clear the deck</div>
+                <div class="aspects-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <a href="aspect-mortgages.html" class="aspect-card">
+                        <div class="aspect-number">Step 1</div>
+                        <div class="aspect-icon" style="background: #E6F1FB; color: #0C447C;">⌂</div>
+                        <h3>Mortgages</h3>
+                        <p>Debt before anything else. Why invest at 5% while paying 6%?</p>
+                    </a>
+                    <a href="aspect-income-protection.html" class="aspect-card">
+                        <div class="aspect-number">Step 2</div>
+                        <div class="aspect-icon" style="background: #EEEDFE; color: #3C3489;">⏱</div>
+                        <h3>Income Protection</h3>
+                        <p>Your income funds everything else on this list.</p>
+                    </a>
+                    <a href="aspect-protection.html" class="aspect-card">
+                        <div class="aspect-number">Step 3</div>
+                        <div class="aspect-icon" style="background: #E1F5EE; color: #085041;">⛨</div>
+                        <h3>Protection</h3>
+                        <p>One event can unwind decades of planning.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tier 2: Build the structure -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="tier-row">
+                <div class="tier-label">Build the structure</div>
+                <div class="aspects-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <a href="aspect-pensions.html" class="aspect-card">
+                        <div class="aspect-number">Step 4</div>
+                        <div class="aspect-icon" style="background: #FAEEDA; color: #633806;">⏳</div>
+                        <h3>Pensions</h3>
+                        <p>The most tax-efficient wrapper — if used properly.</p>
+                    </a>
+                    <a href="aspect-savings.html" class="aspect-card">
+                        <div class="aspect-number">Step 5</div>
+                        <div class="aspect-icon" style="background: #FAECE7; color: #712B13;">💰</div>
+                        <h3>Savings</h3>
+                        <p>Liquidity gives you options.</p>
+                    </a>
+                    <a href="aspect-investments.html" class="aspect-card">
+                        <div class="aspect-number">Step 6</div>
+                        <div class="aspect-icon" style="background: #FBEAF0; color: #72243E;">📈</div>
+                        <h3>Investments</h3>
+                        <p>Step six. Not step one.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tier 3: Keep it together -->
+    <section class="section">
+        <div class="container">
+            <div class="tier-row">
+                <div class="tier-label">Keep it together</div>
+                <div class="aspects-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 700px; margin: 0 auto;">
+                    <a href="aspect-taxation.html" class="aspect-card">
+                        <div class="aspect-number">Step 7</div>
+                        <div class="aspect-icon" style="background: #EAF3DE; color: #27500A;">📋</div>
+                        <h3>Taxation</h3>
+                        <p>Tax touches every single aspect.</p>
+                    </a>
+                    <a href="aspect-trusts.html" class="aspect-card">
+                        <div class="aspect-number">Step 8</div>
+                        <div class="aspect-icon" style="background: #F1EFE8; color: #444441;">👥</div>
+                        <h3>Trusts</h3>
+                        <p>Move wealth between generations — properly.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                Most firms start at step 6. We start at step 1.
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Get in touch</h2>
+                <div class="divider"></div>
+                <p>If any of this sounds relevant, we'd be happy to hear from you.</p>
+                <a href="contact.html" class="btn" style="margin-top: 2rem;">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+                        <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/pwg-logo.png" alt="Family Capital" style="height: 60px; margin-bottom: 0.5rem;">
+                    <p>Wealth management for families and entrepreneurs.</p>
+                    <p style="font-size: 0.8rem; font-style: italic; color: rgba(255,255,255,0.4); margin-top: 0.5rem;">Constantly improving. Never standing still.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="what-we-do.html">What We Do</a></li>
+                        <li><a href="people.html">Team</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="cyber-security.html">Cyber Security</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://www.wealthportal.co.uk/">Client Login</a></li>
+                        <li><a href="timeline.html">Our Timeline</a></li>
+                        <li><a href="eight-aspects.html">Eight Aspects</a></li>
+                        <li><a href="industry-professionals.html">Industry Professionals</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-regulatory">
+                    <p>
+                        Issued by Family Capital Limited (<a href="https://find-and-update.company-information.service.gov.uk/company/10457142" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Company No. 10457142</a>, FCA Ref. 765457), which is authorised and regulated by the <a href="https://register.fca.org.uk/s/firm?id=001b000003ZclGNAAZ" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Financial Conduct Authority</a>.
+                    </p>
+                    <div class="footer-legal-links">
+                        <a href="important-info.html">Important Information</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="modern-slavery.html">Modern Slavery Statement</a>
+                    </div>
+                </div>
+            </div></div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

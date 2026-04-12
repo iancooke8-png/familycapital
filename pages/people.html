@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet the Family Capital team.">
+    <title>Team | Family Capital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .team-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a.team-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .team-card {
+            overflow: hidden;
+            background: var(--white);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .team-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .team-card-img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            overflow: hidden;
+        }
+
+        .team-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            transition: transform 0.6s ease;
+        }
+
+        .team-card:hover .team-card-img img {
+            transform: scale(1.03);
+        }
+
+        .team-card-info {
+            padding: 1.2rem 1rem;
+            background: var(--white);
+        }
+
+        .team-card-info h3 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            color: var(--navy);
+            margin-bottom: 0.2rem;
+        }
+
+        .team-card-info p {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-grey);
+        }
+
+        @media (max-width: 968px) {
+            .team-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-cards {
+                grid-template-columns: 1fr;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="site-nav scrolled">
+        <a href="../" class="nav-logo">
+            <img src="../images/pwg-logo.png" alt="Family Capital">
+        </a>
+                        <ul class="nav-links">
+            <li><a href="../">Home</a></li>
+            <li class="nav-dropdown">
+                <a href="about.html" class="nav-dropdown-toggle">About Us</a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="culture.html">Culture</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="cyber-security.html">Cyber Security</a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <a href="what-we-do.html" class="nav-dropdown-toggle">What We Do</a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="what-we-do.html">Holistic Financial Planning</a></li>
+                    <li><a href="industry-professionals.html">Industry Professionals</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                </ul>
+            </li>
+            <li><a href="people.html">Team</a></li>
+            <li><a href="locations.html">Locations</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header" style="background: var(--off-white); color: var(--navy); padding-bottom: 3rem;">
+        <div class="container">
+            <h1 style="color: var(--navy);">Our Team</h1>
+            <p style="max-width: 640px; margin: 0 auto; font-size: 1.1rem; line-height: 1.7; color: var(--text-grey);">The people behind Family Capital. Many of us have worked together for years — and with our clients for even longer. That continuity matters.</p>
+        </div>
+    </div>
+
+    <!-- Team Grid -->
+    <section class="section">
+        <div class="container">
+            <div class="team-cards">
+
+                <a class="team-card-link" href="bio.html?person=simon-andrews">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Simon Andrews.jpg" alt="Simon Andrews">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Simon Andrews FPFS</h3>
+                        <p>Chartered Financial Planner</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=ewa-bancerz">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Ewa headshot 3.jpg" alt="Ewa Bancerz">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Ewa Bancerz MSc</h3>
+                        <p>Senior Developer</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=george-boyd-jones">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/George Boyd-Jones.jpg" alt="George Boyd-Jones">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>George Boyd-Jones FPFS</h3>
+                        <p>Chartered Financial Planner</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=jonny-bush">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Jonny Bush.jpg" alt="Jonny Bush">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Jonny Bush</h3>
+                        <p>Paraplanner</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=roy-carlton">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/roy.jpg" alt="Roy Carlton">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Roy Carlton MSc</h3>
+                        <p>Senior Developer</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=ian-cooke">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Ian Cooke.jpg" alt="Ian Cooke">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Ian Cooke FPFS</h3>
+                        <p>Chartered Financial Planner</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=ollie-hackett">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Ollie Hackett.jpg" alt="Ollie Hackett">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Ollie Hackett</h3>
+                        <p>Paraplanner</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=duncan-jones">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Duncan Jones.jpg" alt="Duncan Jones">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Duncan Jones DipPFS</h3>
+                        <p>Financial Planner</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=jo-laker">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Jo Laker.jpg" alt="Jo Laker">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Jo Laker</h3>
+                        <p>Chief Operating Officer</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=richard-martin">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Richard Martin.jpg" alt="Richard Martin">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Richard Martin BSc</h3>
+                        <p>Head of Protection</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=mandy-mugridge">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Mandy Mugridge.jpg" alt="Mandy Mugridge">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Mandy Mugridge</h3>
+                        <p>Head of Lending</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=gill-popple">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Gill Popple.jpg" alt="Gill Popple">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Gill Popple</h3>
+                        <p>Office Manager</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=brian-potter">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Brian Potter.jpg" alt="Brian Potter">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Brian Potter ACSI</h3>
+                        <p>Investment Committee</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=ashley-rider">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Ashley Rider.jpg" alt="Ashley Rider">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Ashley Rider FPFS</h3>
+                        <p>Chartered Financial Planner</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=sam-shah">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Sam Shah.jpg" alt="Sam Shah">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Sam Shah FPFS</h3>
+                        <p>Chartered Financial Planner</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=aaron-smith">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Aaron Smith.jpg" alt="Aaron Smith">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Aaron Smith MSc</h3>
+                        <p>Chief Technology Officer</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=summer-smith-robinson">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Summer Smith-Robinson.jpg" alt="Summer Smith-Robinson">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Summer Smith-Robinson</h3>
+                        <p>Senior Administrator</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=claire-stones">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Claire Stones.jpg" alt="Claire Stones">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Claire Stones FPFS</h3>
+                        <p>Chartered Financial Planner</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=kiera-stones">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/Kiera Stones.jpg" alt="Kiera Stones">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>Kiera Stones</h3>
+                        <p>Paraplanner</p>
+                    </div>
+                </div>
+                </a>
+
+                <a class="team-card-link" href="bio.html?person=james-wallace">
+                <div class="team-card">
+                    <div class="team-card-img">
+                        <img src="../images/people/James Wallace.jpg" alt="James Wallace">
+                    </div>
+                    <div class="team-card-info">
+                        <h3>James Wallace FPFS</h3>
+                        <p>Chartered Financial Planner</p>
+                    </div>
+                </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+                        <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../images/pwg-logo.png" alt="Family Capital" style="height: 60px; margin-bottom: 0.5rem;">
+                    <p>Wealth management for families and entrepreneurs.</p>
+                    <p style="font-size: 0.8rem; font-style: italic; color: rgba(255,255,255,0.4); margin-top: 0.5rem;">Constantly improving. Never standing still.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="what-we-do.html">What We Do</a></li>
+                        <li><a href="people.html">Team</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="cyber-security.html">Cyber Security</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://www.wealthportal.co.uk/">Client Login</a></li>
+                        <li><a href="timeline.html">Our Timeline</a></li>
+                        <li><a href="eight-aspects.html">Eight Aspects</a></li>
+                        <li><a href="industry-professionals.html">Industry Professionals</a></li>
+                        <li><a href="technology.html">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-regulatory">
+                    <p>
+                        Issued by Family Capital Limited (<a href="https://find-and-update.company-information.service.gov.uk/company/10457142" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Company No. 10457142</a>, FCA Ref. 765457), which is authorised and regulated by the <a href="https://register.fca.org.uk/s/firm?id=001b000003ZclGNAAZ" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">Financial Conduct Authority</a>.
+                    </p>
+                    <div class="footer-legal-links">
+                        <a href="important-info.html">Important Information</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="modern-slavery.html">Modern Slavery Statement</a>
+                    </div>
+                </div>
+            </div></div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
