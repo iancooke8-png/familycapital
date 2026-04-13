@@ -248,6 +248,12 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
     border-color: rgba(255, 255, 255, 0.9);
 }
 
+@media (max-width: 968px) {
+    .nav-login {
+        display: none;
+    }
+}
+
 /* Mobile nav toggle */
 .nav-toggle {
     display: none;
