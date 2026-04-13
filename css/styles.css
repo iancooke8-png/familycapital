@@ -223,6 +223,27 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
     border-color: var(--white);
 }
 
+/* Nav login button */
+.nav-login {
+    display: inline-block;
+    padding: 0.4rem 1.2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    margin-left: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.nav-login:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
 /* Mobile nav toggle */
 .nav-toggle {
     display: none;
