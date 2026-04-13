@@ -235,6 +235,24 @@ const PEOPLE = [
         ]
     },
     {
+        slug: 'ken-rayner',
+        name: 'Ken Rayner ACII IMC',
+        role: 'Investment Committee',
+        location: 'Leeds',
+        photo: '../images/people/Ken Rayner.jpg',
+        linkedin: 'https://www.linkedin.com/in/ken-rayner-07b71727/',
+        summary: [
+            'Ken sits on the Family Capital investment committee, bringing over thirty-five years of experience in fund research and investment management. He is the founding director and CEO of RSMR, one of the UK\'s most respected independent fund rating and research agencies.',
+            'Family Capital has worked with Ken since 2008, when the firm\'s active portfolios were first launched. That relationship has been maintained throughout — through Benchmark, through the sale to Schroders, and into Family Capital as it is today.'
+        ],
+        experience: [
+            'Ken founded RSMR in 2004 to provide genuinely independent fund research to financial advisers and wealth managers across the UK. The business rates and monitors investment funds based on rigorous, face-to-face due diligence with fund managers — not desk-based screening or algorithm-driven shortlists. That hands-on approach is what sets RSMR apart, and it\'s why firms like Family Capital rely on its research.',
+            'Before founding RSMR, Ken spent fifteen years at Bradford & Bingley, where he was responsible for over seven hundred million pounds of client investment funds. That scale of responsibility, combined with a career that started in 1989, gives him a depth of market knowledge that\'s hard to replicate.',
+            'At Family Capital, Ken\'s role on the investment committee is to bring that independent research perspective to bear on the firm\'s fund selection and portfolio construction. He challenges the investment decisions, reviews the underlying research, and helps ensure the portfolios are built on evidence rather than habit.',
+            'Ken holds a degree in Economics from the University of Leeds and is both ACII and IMC qualified. He is well known on the UK investment circuit and regularly speaks at industry events on fund selection and due diligence.'
+        ]
+    },
+    {
         slug: 'brian-potter',
         name: 'Brian Potter ACSI',
         role: 'Investment Committee',
