@@ -206,6 +206,28 @@
             gap: 2rem;
         }
 
+        .service-cards-3col {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        /* Cash rates grid */
+        .cash-rates-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Value narrative box */
+        .value-narrative-box {
+            background: var(--off-white);
+            border-radius: 12px;
+            padding: 3rem 4rem;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
         .service-card {
             background: var(--white);
             border: 0.5px solid rgba(0,0,0,0.12);
@@ -290,13 +312,31 @@
         /* Responsive */
         @media (max-width: 768px) {
             .aspects-grid { grid-template-columns: repeat(2, 1fr); }
-            .service-cards { grid-template-columns: 1fr; }
-            .wwd-hero-content { margin-left: 5%; max-width: 90%; }
+            .service-cards,
+            .service-cards-3col { grid-template-columns: 1fr; }
+            .cash-rates-grid { grid-template-columns: repeat(2, 1fr); }
+            .value-narrative-box { padding: 2rem 1.5rem; }
+            .wwd-hero-content { margin-left: 5%; max-width: 90%; padding: calc(var(--nav-height) + 2rem) 0 2rem; }
+            .wwd-hero { min-height: 420px; }
+            .wwd-hero-content h1 { font-size: 2rem; }
+            .wwd-hero-content p { font-size: 1rem; }
             .wwd-hero-overlay {
-                background: linear-gradient(180deg, rgba(0,30,66,0.8) 0%, rgba(0,30,66,0.5) 100%);
+                background: linear-gradient(180deg, rgba(0,30,66,0.85) 0%, rgba(0,30,66,0.6) 100%);
             }
             .tax-bars { gap: 1rem; }
             .tax-bar { width: 60px; }
+            .service-card { padding: 1.5rem; }
+            .service-card h3 { font-size: 1.25rem; }
+            .service-price { font-size: 1.75rem; }
+        }
+
+        @media (max-width: 480px) {
+            .aspects-grid { gap: 1rem; }
+            .aspect-card { padding: 1.5rem 1rem; }
+            .aspect-card h3 { font-size: 1rem; }
+            .aspect-card p { font-size: 0.75rem; }
+            .value-narrative-box { padding: 1.5rem 1.25rem; }
+            .value-narrative-box h3 { font-size: 1.25rem; }
         }
     </style>
 </head>
@@ -448,7 +488,7 @@
                 <p style="font-size: 1.1rem; color: #334155; line-height: 1.8; text-align: center;">As your financial planner, we have a straightforward obligation: the value we provide should exceed what we charge. If it doesn't, you shouldn't be using us. Everything we do — the planning, the technology, the investment management — is designed to make sure the answer to that question is never in doubt.</p>
             </div>
 
-            <div class="service-cards" style="grid-template-columns: repeat(3, 1fr);">
+            <div class="service-cards service-cards-3col">
                 <!-- Full planning -->
                 <div class="service-card reveal">
                     <div class="service-tag">Full financial planning</div>
@@ -480,7 +520,7 @@
             <!-- Cash rates -->
             <div style="margin-top: 2.5rem;" class="reveal">
                 <p style="text-align: center; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 1.2rem;">Instant access cash rates — no platform fees, no margin from us</p>
-                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 800px; margin: 0 auto;">
+                <div class="cash-rates-grid">
                     <div style="text-align: center; padding: 1.5rem 1rem; background: var(--white); border: 1px solid var(--border-light); border-radius: 8px;">
                         <svg style="width:32px;height:20px;margin-bottom:0.4rem;border-radius:2px;" viewBox="0 0 60 30"><clipPath id="t"><rect width="60" height="30"/></clipPath><g clip-path="url(#t)"><path d="M0 0v30h60V0z" fill="#00247d"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" stroke="#cf142b" stroke-width="4" clip-path="url(#t)"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#cf142b" stroke-width="6"/></g></svg>
                         <div style="font-family: var(--font-heading); font-size: 1.6rem; color: var(--navy);">3.00%</div>
@@ -507,7 +547,7 @@
 
             <!-- Value narrative -->
             <div style="margin-top: 3rem;" class="reveal">
-                <div style="background: var(--off-white); border-radius: 12px; padding: 3rem 4rem; max-width: 960px; margin: 0 auto;">
+                <div class="value-narrative-box">
                     <h3 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--navy); margin-bottom: 1.2rem; text-align: center;">All planned together. Managed together. Constantly reviewed together.</h3>
                     <p style="font-size: 1.05rem; color: #334155; line-height: 1.8; margin-bottom: 1rem;">Our portfolios have been independently constructed since 2008. The combination of institutional pricing, proper tax structuring, and genuinely holistic planning often means the value of what we save clients far exceeds the fee itself.</p>
                     <p style="font-size: 1.05rem; color: #334155; line-height: 1.8; margin: 0;">There are no exit fees and no barriers to leaving. You're free to move your assets to another adviser at any time. We don't need to lock anyone in.</p>
