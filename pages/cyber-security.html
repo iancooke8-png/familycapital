@@ -155,7 +155,7 @@
                 <div class="security-card reveal">
                     <div class="security-card-icon"><i class="fa-light fa-lock"></i></div>
                     <h3>Encryption</h3>
-                    <p>Data is encrypted at rest and in transit. All connections use TLS encryption, and our databases use Azure SQL's built-in encryption to protect your information even if the underlying storage were somehow compromised.</p>
+                    <p>Your data is encrypted in transit and at rest. Every connection to the Wealth Portal uses TLS, and our databases sit on Azure's encrypted storage — so your information is protected both while it's moving and while it's being held.</p>
                 </div>
 
                 <div class="security-card reveal">
@@ -180,13 +180,13 @@
                 <div class="security-card reveal">
                     <div class="security-card-icon"><i class="fa-light fa-clock"></i></div>
                     <h3>Temporary document access</h3>
-                    <p>When you share sensitive documents with us — passports, identity documents, statements — the access links are only available for minutes, not hours. Documents are stored in Azure's encrypted storage and links expire automatically, designed so that sensitive documents are not left accessible on open URLs.</p>
+                    <p>When you share sensitive documents with us — passports, identity documents, statements — access links are time-limited and expire automatically. Documents are stored in Azure's encrypted storage, so sensitive documents aren't left accessible on open URLs.</p>
                 </div>
 
                 <div class="security-card reveal">
                     <div class="security-card-icon"><i class="fa-light fa-eye"></i></div>
                     <h3>Secure document sharing</h3>
-                    <p>Our DocBox system lets you view your documents — wills, powers of attorney, statements, contracts — through a secure viewer without downloading them to your device. Whether you're in a hotel, at an airport, or on someone else's computer, your documents stay protected. Documents are designed to be viewed, not downloaded to your device.</p>
+                    <p>Our DocBox system lets you view your documents — wills, powers of attorney, statements, contracts — through a secure viewer. Whether you're in a hotel, at an airport, or on someone else's computer, you can see what you need without leaving copies behind.</p>
                     <p style="margin-top: 0.6rem;">It also means you can share documents directly with us — identity documents, bank statements, anything sensitive — without having to use email. Upload it once, securely, and it's there.</p>
                 </div>
 
@@ -200,7 +200,7 @@
                     <div class="security-card-icon"><i class="fa-light fa-vial"></i></div>
                     <h3>Penetration testing</h3>
                     <p>We run penetration testing regularly as part of our development process, including after major releases. Our systems are tested for vulnerabilities in a dedicated staging environment before anything goes live.</p>
-                    <p style="margin-top: 0.6rem;">Where appropriate, sensitive identifiers such as policy numbers and account references are encrypted or hashed. If someone were to gain access to our database, the information they'd find would be meaningless without the keys to decrypt it.</p>
+                    <p style="margin-top: 0.6rem;">The references you see in links and on screen are randomised codes, not the underlying database IDs — so what's visible externally can't be used to guess or enumerate anything internally.</p>
                 </div>
             </div>
         </div>
@@ -211,14 +211,14 @@
         <div class="container">
             <div class="security-narrative reveal">
                 <h2 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--navy); margin-bottom: 1.5rem;">Secure messaging — and why we don't use email</h2>
-                <p>One of the biggest risks we've seen in the financial services industry is email getting hacked. Phishing attacks, compromised inboxes, intercepted messages — email is inherently less secure than dedicated encrypted messaging systems, and yet most firms still use it as their primary communication channel with clients.</p>
-                <p>We took a different approach. The Wealth Portal and our mobile app include encrypted secure messaging. It's how we communicate with clients — and it's how we encourage you to communicate with us. If you send us an email, we'll typically respond through secure messaging instead.</p>
+                <p>One of the biggest risks in financial services is email. Phishing attacks, compromised inboxes, messages intercepted in transit — email is an inherently leaky way to share sensitive information, and yet most firms still use it as their main channel with clients.</p>
+                <p>We took a different approach. The Wealth Portal and our mobile app have a secure messaging system built in. It's how we communicate with clients, and it's how we encourage you to communicate with us. Messages live inside our platform — not in an email server, not in a shared inbox, not in your spam folder next to a supermarket offer.</p>
 
                 <div class="callout-blue">
-                    <p>We don't force anyone to use it — but we do recommend it. Your financial information is too important to be sitting in an email inbox alongside marketing newsletters and spam.</p>
+                    <p>We don't force anyone to use it — but we do recommend it. Your financial information is too important to be sitting in an email inbox.</p>
                 </div>
 
-                <p>This is also why the mobile app matters. With secure messaging on your phone, you can reach us instantly — and everything stays encrypted, end to end.</p>
+                <p>This is also why the mobile app matters. With secure messaging on your phone, you can reach us instantly — without relying on email at all.</p>
             </div>
         </div>
     </section>
@@ -228,9 +228,9 @@
         <div class="container">
             <div class="security-narrative reveal">
                 <h2 style="font-family: var(--font-heading); font-size: 1.5rem; color: var(--navy); margin-bottom: 1.5rem;">AI and your data</h2>
-                <p>We use artificial intelligence to help improve our services — from report writing to compliance checks. But we have clear policies on how AI is used in relation to client data.</p>
-                <p>Client databases and sensitive personal information are not fed through AI systems, and we do not use client personal data to train external AI models. Where we use AI, it's applied to processes and workflows, not to your personal data directly. We have a dedicated AI specialist on the team, and our approach is evidence-based and ethics-led.</p>
-                <p>We believe AI should make things better for clients — but never at the expense of their privacy or security.</p>
+                <p>We use AI to help with things like drafting communications and summarising documents. We have a dedicated AI specialist on the team, and we take a careful, ethics-led approach to how it's applied.</p>
+                <p>Our AI runs inside Microsoft's enterprise Azure environment, which doesn't use customer data to train its models. We don't use consumer AI tools for client work, and we don't hand your data to third parties to train theirs.</p>
+                <p>AI should make things better for clients — never at the expense of their privacy.</p>
             </div>
         </div>
     </section>
@@ -251,7 +251,7 @@
                     <div class="security-card reveal">
                         <div class="security-card-icon"><i class="fa-light fa-message-lines"></i></div>
                         <h3>Use secure messaging</h3>
-                        <p>Send us documents, questions, and sensitive information through the Wealth Portal or mobile app — not email. It's encrypted and it's there for a reason.</p>
+                        <p>Send us documents, questions, and sensitive information through the Wealth Portal or mobile app — not email. It's more secure than email and it's there for a reason.</p>
                     </div>
                     <div class="security-card reveal">
                         <div class="security-card-icon"><i class="fa-light fa-envelope-circle-check"></i></div>
