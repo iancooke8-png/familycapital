@@ -99,7 +99,7 @@ const PEOPLE = [
     },
     {
         slug: 'george-boyd-jones',
-        name: 'George Boyd-Jones FPFS',
+        name: 'George Boyd-Jones APFS',
         role: 'Partner',
         location: 'London',
         photo: '../images/people/George Boyd-Jones.jpg',
@@ -118,7 +118,7 @@ const PEOPLE = [
             'George started in financial services at Standard Life in 2017 and worked his way up from client support through paraplanning to financial consulting — learning every part of the advice process from the ground up.',
             'During his time at abrdn, he built a reputation for taking the time to properly understand clients before making recommendations. That hands-on progression through every level of the business gives him a practical depth that clients notice — he\'s not just qualified on paper, he\'s done every part of the job.',
             'He joined Family Capital as a partner in 2025 because the model matched the way he wanted to work — personal relationships, genuine independence, and a shared belief in doing things properly. For George, the best part of financial planning has always been the human side: helping people feel secure about their future and supported through life\'s changes.',
-            'He is a Fellow of the Personal Finance Society, a Chartered Financial Planner, and a qualified discretionary fund manager.'
+            'He is an Associate of the Personal Finance Society, a Chartered Financial Planner, and a qualified discretionary fund manager.'
         ]
     },
     {
