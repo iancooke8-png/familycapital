@@ -9,7 +9,7 @@ const PEOPLE = [
         name: 'Ian Cooke FPFS',
         role: 'Chief Executive',
         location: 'London & Sussex',
-        photo: '../images/people/Ian Cooke.jpg',
+        photo: 'images/people/Ian Cooke.jpg',
         linkedin: 'https://www.linkedin.com/in/ian-cooke-18332828/',
         office: {
             name: 'Family Capital',
@@ -36,7 +36,7 @@ const PEOPLE = [
         name: 'Claire Stones FPFS',
         role: 'Practice Partner',
         location: 'Leeds',
-        photo: '../images/people/Claire Stones.jpg',
+        photo: 'images/people/Claire Stones.jpg',
         linkedin: 'https://www.linkedin.com/in/claire-stones-31657560/',
         summary: [
             'Claire is a practice partner at Family Capital and heads up the firm\'s Leeds office. A chartered financial planner with over twenty-five years of experience, she runs her own office with her own team, working closely with families on long-term planning — particularly around trusts, estate planning, and the structures that help protect wealth across generations.',
@@ -60,7 +60,7 @@ const PEOPLE = [
         name: 'Simon Andrews FPFS',
         role: 'Partner',
         location: 'Sevenoaks, Kent',
-        photo: '../images/people/Simon Andrews.jpg',
+        photo: 'images/people/Simon Andrews.jpg',
         linkedin: 'https://www.linkedin.com/in/simonandrews1977/',
         office: {
             name: 'Family Capital',
@@ -84,7 +84,7 @@ const PEOPLE = [
         name: 'Ewa Bancerz MSc',
         role: 'Senior Developer',
         location: 'Remote',
-        photo: '../images/people/Ewa headshot 3.jpg',
+        photo: 'images/people/Ewa headshot 3.jpg',
         linkedin: 'https://www.linkedin.com/in/ewa-bancerz-b5ba001b0/',
         summary: [
             'Ewa is a senior developer at Family Capital, working across the full technology stack that powers the firm — from client-facing applications to the AI-driven tools that sit behind the scenes.',
@@ -102,7 +102,7 @@ const PEOPLE = [
         name: 'George Boyd-Jones APFS',
         role: 'Partner',
         location: 'London',
-        photo: '../images/people/George Boyd-Jones.jpg',
+        photo: 'images/people/George Boyd-Jones.jpg',
         linkedin: 'https://www.linkedin.com/in/george-boyd-jones-224189141/',
         office: {
             name: 'Family Capital',
@@ -126,7 +126,7 @@ const PEOPLE = [
         name: 'Roy Carlton MSc',
         role: 'Senior Developer',
         location: 'Remote',
-        photo: '../images/people/roy.jpg',
+        photo: 'images/people/roy.jpg',
         linkedin: null,
         summary: [
             'Roy is a senior developer at Family Capital with a specialist focus on security, systems resilience, and making sure the technology the firm builds is robust enough to protect the people who rely on it.',
@@ -144,7 +144,7 @@ const PEOPLE = [
         name: 'Jo Laker',
         role: 'Chief Operating Officer',
         location: 'Sussex',
-        photo: '../images/people/Jo Laker.jpg',
+        photo: 'images/people/Jo Laker.jpg',
         linkedin: 'https://www.linkedin.com/in/jo-laker-6400b014/',
         summary: [
             'Jo is the Chief Operating Officer at Family Capital and has worked alongside the team for over seventeen years — longer than anyone else in the firm.',
@@ -162,7 +162,7 @@ const PEOPLE = [
         name: 'Richard Martin BSc',
         role: 'Head of Protection',
         location: 'London',
-        photo: '../images/people/Richard Martin.jpg',
+        photo: 'images/people/Richard Martin.jpg',
         linkedin: null,
         summary: [
             'Richard heads up protection planning at Family Capital, a role he has made his own over the course of a twenty-year association with the firm.',
@@ -179,7 +179,7 @@ const PEOPLE = [
         name: 'Mandy Mugridge',
         role: 'Head of Lending',
         location: 'Sussex',
-        photo: '../images/people/Mandy Mugridge.jpg',
+        photo: 'images/people/Mandy Mugridge.jpg',
         linkedin: null,
         summary: [
             'Mandy heads up the lending side of Family Capital, working with clients on mortgages and property finance — from straightforward residential purchases through to multi-million pound properties, complex security arrangements, and private bank lending. She has a long association with the firm and understands the lending needs of many of our clients extremely well.',
@@ -196,7 +196,7 @@ const PEOPLE = [
         name: 'Aaron Smith MSc',
         role: 'Chief Technology Officer',
         location: 'Brighton',
-        photo: '../images/people/Aaron Smith.jpg',
+        photo: 'images/people/Aaron Smith.jpg',
         linkedin: 'https://www.linkedin.com/in/aaron-smith-brightware/',
         summary: [
             'Aaron is the Chief Technology Officer at Family Capital, leading the technology strategy across the firm and its parent group, Perpetual Wealth. He has been building financial services software for over two decades.',
@@ -215,7 +215,7 @@ const PEOPLE = [
         name: 'Sam Shah FPFS',
         role: 'Partner',
         location: 'London',
-        photo: '../images/people/Sam Shah.jpg',
+        photo: 'images/people/Sam Shah.jpg',
         linkedin: 'https://www.linkedin.com/in/sameer-shah-cfp-mcsi-apfs-rlp/',
         office: {
             name: 'Family Capital',
@@ -239,7 +239,7 @@ const PEOPLE = [
         name: 'Ken Rayner ACII IMC',
         role: 'Investment Committee',
         location: 'Leeds',
-        photo: '../images/people/Ken Rayner.jpg',
+        photo: 'images/people/Ken Rayner.jpg',
         linkedin: 'https://www.linkedin.com/in/ken-rayner-07b71727/',
         summary: [
             'Ken sits on the Family Capital investment committee, bringing over thirty-five years of experience in fund research and investment management. He is the founding director and CEO of RSMR, one of the UK\'s most respected independent fund rating and research agencies.',
@@ -257,7 +257,7 @@ const PEOPLE = [
         name: 'Brian Potter ACSI',
         role: 'Investment Committee',
         location: 'London',
-        photo: '../images/people/Brian Potter.jpg',
+        photo: 'images/people/Brian Potter.jpg',
         linkedin: 'https://www.linkedin.com/in/brian-potter-55114a225/',
         office: {
             name: 'Family Capital',
@@ -281,7 +281,7 @@ const PEOPLE = [
         name: 'James Wallace FPFS',
         role: 'Partner',
         location: 'Sussex',
-        photo: '../images/people/James Wallace.jpg',
+        photo: 'images/people/James Wallace.jpg',
         linkedin: 'https://www.linkedin.com/in/jameswallacefinancialplanner/',
         office: {
             name: 'Family Capital',
@@ -299,6 +299,98 @@ const PEOPLE = [
             'At Family Capital, James has the freedom to advise without constraints. He can access the whole market, recommend the best solutions regardless of provider, and build portfolios through the firm\'s discretionary management service. For clients who have come from a private banking environment, that independence — combined with the personal attention of a smaller firm — is exactly what they were missing.',
             'James works with families navigating significant financial milestones, business owners with complex planning needs, and individuals who want proper clarity about their financial future. His approach is straightforward: understand what matters to the client, cut through the complexity, and build a plan that actually works.',
             'He is a Fellow of the Personal Finance Society, a Chartered Financial Planner, a Certified Financial Planner, and a qualified discretionary fund manager. He also holds a BSc in Psychology — which, in a profession built on understanding how people think and feel about money, turns out to be more useful than most financial qualifications.'
+        ]
+    },
+    {
+        slug: 'jonny-bush',
+        name: 'Jonny Bush',
+        role: 'Senior Administrator',
+        location: 'Leeds',
+        photo: 'images/people/Jonny Bush.jpg',
+        office: {
+            name: 'Family Capital North',
+            address: 'Seven Hills Business Centre\nSouth Street, Morley\nLeeds LS27 8AT',
+            phone: '0113 539 9100',
+            email: 'jonny.bush@familycapital.co.uk'
+        },
+        summary: [
+            'Jonny is Senior Administrator at the Leeds office. His job is the bit clients feel but rarely see — workflow, data integrity, compliance support, and making sure every process lands cleanly and on time.',
+            'He works closely with Claire and Gill to keep the day-to-day running of the business tight and efficient, which is what makes the client experience feel seamless rather than something that had to be fought for.'
+        ],
+        experience: [
+            'Jonny has worked in financial services alongside Claire and Gill since leaving college, building his career through hands-on experience while studying for his Level 4 Diploma in Regulated Financial Planning.',
+            'That combination — knowing the theory and knowing how provider systems actually behave in the real world — is what stops small problems becoming big ones. When something needs doing properly, Jonny is usually the one who already did it.',
+            '"I always apply a client-first approach. That, plus a deep understanding of how each provider\'s systems and processes work, is how you deliver something that actually feels seamless."'
+        ]
+    },
+    {
+        slug: 'gill-popple',
+        name: 'Gill Popple',
+        role: 'Business Manager',
+        location: 'Leeds',
+        photo: 'images/people/Gill Popple.jpg',
+        office: {
+            name: 'Family Capital North',
+            address: 'Seven Hills Business Centre\nSouth Street, Morley\nLeeds LS27 8AT',
+            phone: '0113 539 9100',
+            email: 'gill.popple@familycapital.co.uk'
+        },
+        summary: [
+            'Gill is Business Manager at the Leeds office, with over thirty years of experience in financial services and a highly client-focused approach. She combines strong technical knowledge with a quiet commitment to delivering a consistently high standard of service.',
+            'Her job is the bit clients don\'t see — but feel when it\'s missing. Client care, regulatory standards, and the day-to-day operational work that keeps the business running smoothly.'
+        ],
+        experience: [
+            'Gill has worked in financial services for over thirty years and holds a broad range of qualifications. She is responsible for overseeing client care, maintaining robust regulatory standards, and ensuring the day-to-day operations of the business run properly.',
+            'Her attention to detail and organisational oversight are part of what allows the firm to deliver a dependable and professional client experience — consistently, and without fuss.',
+            'Having worked alongside Claire for over twenty-five years, Gill is an integral part of a well-established partnership that supports the continued success and stability of the Leeds office.',
+            '"I have worked with Claire for over twenty-five years and believe we make a great team. That creates a successful business while consistently delivering a trusted and reliable experience for our clients."'
+        ]
+    },
+    {
+        slug: 'ashley-rider',
+        name: 'Ashley Rider AFPS',
+        role: 'Chartered Financial Planner',
+        location: 'Leeds',
+        photo: 'images/people/Ashley Rider.jpg',
+        office: {
+            name: 'Family Capital North',
+            address: 'Seven Hills Business Centre\nSouth Street, Morley\nLeeds LS27 8AT',
+            phone: '0113 539 9100',
+            email: 'ashley.rider@familycapital.co.uk'
+        },
+        summary: [
+            'Ash is a Chartered Financial Planner at the Leeds office, working with clients at every stage of life — from those building wealth, through retirement planning, to inheritance and legacy.',
+            'With thirteen years in financial services, including six years as Head of North Advisory Sales at Schroders, he brings a useful combination of market insight and planning discipline.'
+        ],
+        experience: [
+            'Ash spent the last six years as Head of North Advisory Sales for Schroders, working closely with advisers across the north of England. That gave him a clear view of the industry from the product side as well as the planning side — which turns out to be a useful perspective when helping clients think about investments, structure, and risk.',
+            'He specialises in developing tailored wealth management strategies for individuals, families, and business owners — focusing on the long-term goals that matter most to each client, whether that\'s financial security, freedom, or passing something meaningful on.',
+            'His approach combines strong market insight with disciplined risk management and a clear focus on the client\'s priorities. Retirement planning, investment growth, legacy planning, life transitions — each plan is aligned with what actually matters to the person it\'s being built for.',
+            'Ash is a Chartered Financial Planner.',
+            '"I believe financial planning isn\'t just about numbers — it\'s about giving you the confidence and clarity to live life on your terms."'
+        ]
+    },
+    {
+        slug: 'kiera-stones',
+        name: 'Kiera Stones DipPFS',
+        role: 'Paraplanner',
+        location: 'Leeds',
+        photo: 'images/people/Kiera Stones.jpg',
+        office: {
+            name: 'Family Capital North',
+            address: 'Seven Hills Business Centre\nSouth Street, Morley\nLeeds LS27 8AT',
+            phone: '0113 539 9100',
+            email: 'kiera.stones@familycapital.co.uk'
+        },
+        summary: [
+            'Kiera is a paraplanner at the Leeds office, working closely with Claire to turn client conversations into clear, well-structured financial plans and suitability reports.',
+            'Her role involves in-depth research, detailed analysis, and the construction of recommendations that genuinely reflect each client\'s circumstances.'
+        ],
+        experience: [
+            'Kiera is Claire\'s daughter and joined the team after completing her A-levels. Since then, she has built her technical knowledge through both study and hands-on experience inside the business — working on real client plans under proper supervision from day one.',
+            'She has completed her Diploma in Financial Planning and is currently studying towards Chartered status, with the long-term ambition of moving into a financial adviser role.',
+            'Her job is the detailed, unglamorous work that underpins every good recommendation: researching options, running the numbers, and making sure the written advice reflects the client accurately. Done well, it is the difference between a plan that works and one that just looks good on paper.',
+            '"No two clients are the same, which keeps the role interesting and challenging. It is very rewarding to understand each individual\'s circumstances and reflect this clearly in the reports I provide."'
         ]
     }
 ];

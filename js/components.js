@@ -4,9 +4,8 @@
    ============================================ */
 
 (function() {
-    // Work out the base path — are we in /pages/ or at root?
-    const isInPages = window.location.pathname.includes('/pages/');
-    const base = isInPages ? '..' : '.';
+    // Every page is now served from site root — base path is always '.'.
+    const base = '.';
 
     // Load a component into a placeholder element
     function loadComponent(id, file) {

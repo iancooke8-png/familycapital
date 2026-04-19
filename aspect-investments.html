@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Income Protection — Your biggest asset isn't what you own, it's what you earn.">
-    <title>Income Protection | Eight Aspects | Family Capital</title>
+    <meta name="description" content="Investments — Step six of eight. The portfolio is the last decision, not the first.">
+    <title>Investments | Eight Aspects | Family Capital</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="../vendor/fa/fontawesome.min.js"></script>
-    <script src="../vendor/fa/light.min.js"></script>
-    <script src="../vendor/fa/solid.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="vendor/fa/fontawesome.min.js"></script>
+    <script src="vendor/fa/light.min.js"></script>
+    <script src="vendor/fa/solid.min.js"></script>
     <style>
         :root {
             --navy: #001e42;
@@ -77,10 +77,10 @@
             margin-bottom: 0;
         }
 
-        /* CALLOUT BOX */
+        /* CALLOUT BOX — light blue wash */
         .callout-box {
-            background: #fef9e7;
-            border-left: 4px solid #f59e0b;
+            background: #eff6ff;
+            border-left: 4px solid var(--accent);
             border-radius: 8px;
             padding: 1.5rem 1.75rem;
             margin: 1.5rem 0;
@@ -88,32 +88,11 @@
         .callout-box p {
             font-size: 1rem;
             line-height: 1.7;
-            color: #92400e;
-            margin: 0;
+            color: #1e40af;
+            margin: 0 0 1rem;
         }
-
-        /* WHAT WE LOOK AT LIST */
-        .look-at-list {
-            list-style: none;
-            padding: 0;
-            margin: 1rem 0 1.5rem;
-        }
-        .look-at-list li {
-            font-size: 0.95rem;
-            color: var(--text-grey);
-            padding: 0.4rem 0 0.4rem 1.5rem;
-            position: relative;
-        }
-        .look-at-list li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--accent);
+        .callout-box p:last-child {
+            margin-bottom: 0;
         }
 
         /* FULL ASPECTS GRID */
@@ -263,11 +242,11 @@
         }
     </style>
 </head>
-<body data-aspect="true" data-prev="aspect-mortgages.html" data-prev-name="Mortgages" data-next="aspect-protection.html" data-next-name="Protection">
+<body data-aspect="true" data-prev="aspect-savings.html" data-prev-name="Savings" data-next="aspect-taxation.html" data-next-name="Taxation">
     <nav class="site-nav scrolled">
-        <a href="../" class="nav-logo"><img src="../images/pwg-logo.png" alt="Family Capital"></a>
+        <a href="/" class="nav-logo"><img src="images/pwg-logo.png" alt="Family Capital"></a>
                 <ul class="nav-links">
-            <li><a href="../">Home</a></li>
+            <li><a href="/">Home</a></li>
             <li class="nav-dropdown">
                 <a href="about.html" class="nav-dropdown-toggle">About Us</a>
                 <ul class="nav-dropdown-menu">
@@ -299,16 +278,16 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                 <div>
-                    <span style="display: inline-block; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2.5px; color: var(--text-light); margin-bottom: 1.2rem;">Step 2 of 8 &middot; Clear the deck</span>
-                    <div style="margin-bottom: 1rem;">
-                        <i class="fa-light fa-clock" style="font-size: 2.5rem; color: var(--accent);"></i>
+                    <span style="display: inline-block; font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2.5px; color: var(--text-light); margin-bottom: 1.2rem;">Step 6 of 8 &middot; Build the structure</span>
+                    <div style="margin-bottom: 0.6rem;">
+                        <i class="fa-light fa-chart-line" style="font-size: 2.5rem; color: var(--accent);"></i>
                     </div>
-                    <h1 style="font-size: clamp(2.2rem, 4vw, 3rem); color: var(--navy); margin-bottom: 0.3rem;">Income Protection</h1>
-                    <p style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-light); font-style: italic; margin-bottom: 1.5rem;">(your biggest asset isn't what you own &mdash; it's what you earn)</p>
-                    <p style="font-size: 1.15rem; color: var(--text-dark); line-height: 1.7; margin-bottom: 1.5rem;">Your income funds everything else on this list. Where it comes from, how secure it is, and what happens if it stops &mdash; that's what we consider here.</p>
+                    <h1 style="font-size: clamp(2.2rem, 4vw, 3rem); color: var(--navy); margin-bottom: 0.3rem;">Investments</h1>
+                    <p style="font-family: var(--font-heading); font-size: 1.15rem; color: var(--text-light); font-style: italic; margin-bottom: 1.5rem;">(step six &mdash; not step one)</p>
+                    <p style="font-size: 1.15rem; color: var(--text-dark); line-height: 1.7; margin-bottom: 1.5rem;">One of the most important decisions in your financial plan &mdash; and the reason it comes sixth is precisely because you need to get everything else right first.</p>
                 </div>
                 <div style="border-radius: 12px; overflow: hidden; height: 100%; min-height: 400px; position: relative;">
-                    <img src="../images/income-protection.jpg" alt="Income Protection" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(0.85) brightness(1.02);">
+                    <img src="images/vineyard.jpg" alt="Vineyard" style="width: 100%; height: 100%; object-fit: cover; display: block; filter: saturate(0.85) brightness(1.02);">
                 </div>
             </div>
         </div>
@@ -319,74 +298,91 @@
         <div class="container">
             <div class="cards-wrapper">
 
-                <!-- CARD 1: THE QUESTION -->
+                <!-- CARD 1: WHY STEP SIX -->
                 <div class="aspect-card">
-                    <div class="card-icon"><i class="fa-light fa-circle-question"></i></div>
-                    <p class="card-bold">If you couldn't work tomorrow, what happens?</p>
-                    <p class="card-copy">It's a simple question that most people haven't properly answered. Does your employer pay you? For how long? If you're self-employed, there's probably nothing at all. Understanding this is the starting point &mdash; not the end.</p>
+                    <div class="card-icon"><i class="fa-light fa-list-ol"></i></div>
+                    <p class="card-bold">The portfolio is the last decision, not the first.</p>
+                    <p class="card-copy">By the time we get here, we've already talked at length about what volatility actually means, why relying on risk questionnaires alone can be flawed, and what your money genuinely needs to do for you.</p>
+                    <p class="card-copy">We know about your debt position and any potential borrowing. Your income needs. Your protection. Your existing pensions. What amounts you might want to give to your family. Your inheritance tax position. The investment decision sits on top of all of that &mdash; not the other way round.</p>
+                    <p class="card-copy">You can't decide where to invest until you understand the full picture. That's why this is step six.</p>
                 </div>
 
-                <!-- CARD 2: IT'S NOT JUST A POLICY -->
+                <!-- CARD 2: WHERE IT SITS MATTERS — amber callout -->
                 <div class="aspect-card">
-                    <div class="card-icon"><i class="fa-light fa-file-shield"></i></div>
-                    <p class="card-bold">Income protection isn't just about insurance.</p>
-                    <p class="card-copy">Yes, there are policies &mdash; and sometimes they're exactly the right answer. But income protection in the broader sense means understanding everything that contributes to your financial security. Earned income, investment income, rental income, workplace benefits, your partner's income. The full picture.</p>
-                    <p class="card-copy">For most of our clients, their investments already provide enough to live on. They're financially free. But they didn't get there by accident &mdash; and they didn't get there by ignoring this question.</p>
-                </div>
+                    <div class="card-icon"><i class="fa-light fa-boxes-stacked"></i></div>
+                    <p class="card-bold">Where you hold it matters as much as what you hold.</p>
+                    <p class="card-copy">The same portfolio in different tax wrappers produces completely different outcomes. Getting the wrapper right is where the real skill lies &mdash; and the difference it makes is enormous.</p>
 
-                <!-- CARD 3: WORKPLACE -->
-                <div class="aspect-card">
-                    <div class="card-icon"><i class="fa-light fa-building"></i></div>
-                    <p class="card-bold">Have you joined your employer's scheme?</p>
-
-                    <div class="callout-box">
-                        <p>Many employers offer permanent health insurance as a benefit. If yours does, join it. It's usually free or heavily subsidised &mdash; and it's one of the easiest decisions you'll ever make.</p>
+                    <div style="background: #fef9e7; border-left: 4px solid #f59e0b; border-radius: 8px; padding: 1.2rem 1.5rem; margin: 1.2rem 0;">
+                        <p style="font-size: 0.95rem; color: #92400e; line-height: 1.7; margin: 0 0 0.8rem;">For years, fund managers have built portfolios full of high-dividend stocks for income. But the highest rate of dividend tax is 39.35%. Those holdings should be inside ISAs and pensions where dividends are sheltered &mdash; not in a general investment account where nearly 40p of every pound is lost to tax.</p>
+                        <p style="font-size: 0.95rem; color: #92400e; line-height: 1.7; margin: 0 0 0.8rem;">Growth assets, on the other hand, belong in the GIA &mdash; where capital gains tax is 24% and you control when you crystallise.</p>
+                        <p style="font-size: 0.95rem; color: #92400e; line-height: 1.7; margin: 0 0 0.8rem; font-weight: 600;">Same overall allocation. Completely different tax outcome. And by structuring things properly, you can often improve the inheritance tax position too.</p>
+                        <p style="font-size: 0.95rem; color: #92400e; line-height: 1.7; margin: 0;">Then there's pension relief. If your income falls between £100,000 and £125,140, you're in the personal allowance taper &mdash; an effective marginal tax rate of 60%. A pension contribution in that band means that for every £4,000 it costs you, £10,000 is actually invested. That's not a gimmick. It's just the maths.</p>
                     </div>
 
-                    <p class="card-copy">We also look at how long your employer would continue to pay you if you were off sick. Three months? Six? A year? The gap between that and your actual needs is what matters.</p>
+                    <p class="card-copy">This is why we consider all eight aspects together. The investment itself is straightforward. Knowing which wrapper to put it in &mdash; and why &mdash; is where the real value lies.</p>
                 </div>
 
-                <!-- CARD 4: FINANCIAL FREEDOM -->
+                <!-- CARD 3: THE PSYCHOLOGY OF RISK — featured blue wash -->
+                <div class="aspect-card" style="background: #f0f5ff; border-left-width: 5px;">
+                    <div class="card-icon"><i class="fa-light fa-brain"></i></div>
+                    <p class="card-bold">The biggest risk is not understanding risk.</p>
+                    <p class="card-copy">One of the most important things we do is help people genuinely understand investment risk. Not the textbook definition &mdash; the real thing. Most people think risk means losing money. Actually, it's about understanding volatility.</p>
+                    <p class="card-copy">If people understood volatility properly, they'd often take more equity risk over time &mdash; and end up with significantly more money and security for their family. The risk of being too cautious is just as real as the risk of being too aggressive. Sitting in cash feels safe, but over the long term it can be far more damaging than a well-structured equity portfolio.</p>
+                    <p class="card-bold" style="font-size: 1.1rem;">There's no greater risk than not taking enough of it.</p>
+                    <p class="card-copy">Investment psychology matters. Getting comfortable with the right level of volatility for your circumstances &mdash; and understanding why &mdash; is where the real value lies.</p>
+                </div>
+
+                <!-- CARD 4: TIME HORIZON CHANGES EVERYTHING -->
                 <div class="aspect-card">
-                    <div class="card-icon"><i class="fa-light fa-dove"></i></div>
-                    <p class="card-bold">The goal is to not need any of this.</p>
-                    <p class="card-copy">Financial freedom means your income from investments, pensions, and other sources covers your needs &mdash; permanently. At that point, income protection becomes less about protecting yourself and more about what you do with the surplus.</p>
-                    <p class="card-copy">Which connects directly to gifting, tax planning, and how you pass wealth on. Everything links together.</p>
+                    <div class="card-icon"><i class="fa-light fa-hourglass-half"></i></div>
+                    <p class="card-bold">Time changes what risk means.</p>
+                    <p class="card-copy">A junior ISA that won't be touched for eighteen years? That's exactly where you want to be taking an equity approach. The same goes for most pensions with a long horizon &mdash; time is on your side, and volatility works in your favour over the long term.</p>
+                    <p class="card-copy">But if you're investing for a shorter-term need &mdash; a property purchase, school fees, something you'll draw on in the next few years &mdash; you probably want less volatility in the portfolio. The investment approach has to match the timescale.</p>
+                    <p class="card-copy">People often get this the wrong way round. They play it safe with money that has decades to grow, and take chances with money they'll need soon. Getting the right level of volatility into the right wrapper, for the right timescale, is one of the most valuable things we do.</p>
                 </div>
 
-                <!-- CARD 5: WHAT WE ACTUALLY LOOK AT -->
+                <!-- CARD 5: INDEPENDENCE -->
+                <div class="aspect-card" style="background: #f0f5ff; border-left-width: 5px;">
+                    <div class="card-icon"><i class="fa-light fa-shield-check"></i></div>
+                    <p class="card-bold">Independence matters.</p>
+                    <p class="card-copy">We won Investment Manager of the Year in 2011, largely on the back of our independence and fund selection. Our portfolios are constructed without bias &mdash; no in-house funds, no restricted lists, no pressure to use a particular provider. Every holding is there on merit.</p>
+                    <p class="card-copy">But we don't try to do everything ourselves. If you want a deeper impact or ethical portfolio beyond what we offer, we'll intermediate on your behalf and introduce you to a specialist manager. If you already have a fund manager you're happy with, that's fine too &mdash; we can work alongside them.</p>
+                    <p class="card-copy">The only rule is that you need one financial planner coordinating the whole picture. You can't have two &mdash; it doesn't work. But within that, we're flexible about how the investments are managed.</p>
+                    <p class="card-copy">Independence also means there's normally no VAT on our fees &mdash; an added bonus that makes a real difference over time.</p>
+                </div>
+
+                <!-- CARD 5: WHAT WE DON'T DO -->
                 <div class="aspect-card">
-                    <div class="card-icon"><i class="fa-light fa-list-check"></i></div>
-                    <p class="card-bold">What we consider:</p>
-                    <ul class="look-at-list">
-                        <li>Where your income comes from and how secure it is</li>
-                        <li>What your essential spending actually looks like</li>
-                        <li>How long you could manage without earned income</li>
-                        <li>Whether your workplace offers any protection</li>
-                        <li>Whether a policy would fill a genuine gap</li>
-                        <li>How this connects to your savings, investments, and long-term plan</li>
-                    </ul>
-                    <p class="card-copy">Usually it's a straightforward conversation. But it's one that needs having.</p>
+                    <div class="card-icon"><i class="fa-light fa-ban"></i></div>
+                    <p class="card-bold">No star managers. No timing the market. No churning.</p>
+                    <p class="card-copy">We don't chase performance. We don't switch funds every quarter. We don't try to predict what markets will do next week. We build portfolios that are structured to compound over decades &mdash; and then we leave them alone, reviewing and rebalancing when the evidence says we should.</p>
                 </div>
 
-                <!-- CARD 6: HOW THIS CONNECTS -->
+                <!-- CARD 6: SUSTAINABLE INVESTING -->
+                <div class="aspect-card">
+                    <div class="card-icon"><i class="fa-light fa-leaf"></i></div>
+                    <p class="card-bold">If it matters to you, it matters to us.</p>
+                    <p class="card-copy">ESG, sustainable investing, ethical screens &mdash; we can accommodate any preference. But we won't pretend it doesn't affect returns. We'll show you the trade-offs honestly and let you decide.</p>
+                </div>
+
+                <!-- CARD 7: CONNECTION GRID -->
                 <div class="aspect-card">
                     <div class="card-icon"><i class="fa-light fa-diagram-project"></i></div>
                     <p class="card-bold">How this fits into your wider plan</p>
-                    <p class="card-copy">Income touches everything. What you earn determines what you can save, invest, protect, and ultimately pass on.</p>
+                    <p class="card-copy">Investment decisions are shaped by everything that comes before them &mdash; and they feed directly into your tax planning and trust structures.</p>
 
                     <div class="aspects-connect-grid">
                         <a href="aspect-mortgages.html" class="aspect-mini-card">
                             <div class="aspect-mini-icon" style="background: #E6F1FB; color: #0C447C;">&#8962;</div>
                             <h4>Mortgages</h4>
                         </a>
-                        <div class="aspect-mini-card current">
-                            <div class="aspect-mini-icon" style="background: #EEEDFE; color: #3C3489;">&#9201;</div>
+                        <a href="aspect-income-protection.html" class="aspect-mini-card">
+                            <div class="aspect-mini-icon" style="background: #EEEDFE; color: #3C3489;">&#9207;</div>
                             <h4>Income Protection</h4>
-                            <p class="mini-desc">You are here</p>
-                        </div>
+                        </a>
                         <a href="aspect-protection.html" class="aspect-mini-card">
-                            <div class="aspect-mini-icon" style="background: #E1F5EE; color: #085041;">&#9832;</div>
+                            <div class="aspect-mini-icon" style="background: #E1F5EE; color: #085041;">&#9928;</div>
                             <h4>Protection</h4>
                         </a>
                         <a href="aspect-pensions.html" class="aspect-mini-card">
@@ -397,10 +393,11 @@
                             <div class="aspect-mini-icon" style="background: #FAECE7; color: #712B13;">&#128176;</div>
                             <h4>Savings</h4>
                         </a>
-                        <a href="aspect-investments.html" class="aspect-mini-card">
+                        <div class="aspect-mini-card current">
                             <div class="aspect-mini-icon" style="background: #FBEAF0; color: #72243E;">&#128200;</div>
                             <h4>Investments</h4>
-                        </a>
+                            <p class="mini-desc">You are here</p>
+                        </div>
                         <a href="aspect-taxation.html" class="aspect-mini-card">
                             <div class="aspect-mini-icon" style="background: #EAF3DE; color: #27500A;">&#128203;</div>
                             <h4>Taxation</h4>
@@ -420,8 +417,8 @@
     <section class="summary-section">
         <div class="container">
             <div class="summary-box">
-                <p class="card-bold">We don't sell income protection policies.</p>
-                <p class="card-copy">We work out whether you need one &mdash; and if you don't, we move on.</p>
+                <p class="card-bold">Investments are step six for a reason.</p>
+                <p class="card-copy">Get the structure right first. The portfolio takes care of itself.</p>
             </div>
         </div>
     </section>
@@ -430,8 +427,8 @@
     <section style="background: var(--off-white);">
         <div class="container">
             <div class="prev-next">
-                <a href="aspect-mortgages.html">&larr; Mortgages</a>
-                <a href="aspect-protection.html">Next: Protection &rarr;</a>
+                <a href="aspect-savings.html">&larr; Savings</a>
+                <a href="aspect-taxation.html">Next: Taxation &rarr;</a>
             </div>
         </div>
     </section>
@@ -445,12 +442,22 @@
         </div>
     </section>
 
+    <!-- Disclaimers -->
+    <section style="padding: 2rem 0; border-top: 1px solid var(--border-light);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; font-size: 0.75rem; color: #94a3b8; line-height: 1.7;">
+                <p style="margin-bottom: 0.5rem;">Past performance is not a reliable indicator of future results. The value of investments and the income from them can go down as well as up, and you may get back less than you invest.</p>
+                <p>Family Capital is a trading name of Family Capital Ltd, which is authorised and regulated by the Financial Conduct Authority. Tax treatment depends on individual circumstances and may be subject to change in the future.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container">
                         <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="../images/pwg-logo.png" alt="Family Capital" style="height: 60px; margin-bottom: 0.5rem;">
+                    <img src="images/pwg-logo.png" alt="Family Capital" style="height: 60px; margin-bottom: 0.5rem;">
                     <p>Wealth management for families and entrepreneurs.</p>
                     <p style="font-size: 0.8rem; font-style: italic; color: rgba(255,255,255,0.4); margin-top: 0.5rem;">Constantly improving. Never standing still.</p>
                 </div>
@@ -489,7 +496,7 @@
             </div></div>
     </footer>
 
-    <script src="../js/main.js"></script>
-    <script src="../js/aspect-nav.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/aspect-nav.js"></script>
 </body>
 </html>
