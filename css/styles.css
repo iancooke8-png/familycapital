@@ -800,6 +800,42 @@ h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
     background: #1a1a1a;
     color: var(--muted-blue);
     padding: 4rem 0 2rem;
+    position: relative;
+}
+
+/* Quiet entry to Charlie, tucked in the footer's bottom-right corner.
+   Barely visible until someone hovers — deliberately discreet. */
+.footer-charlie-portal {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: rgba(255, 255, 255, 0.02);
+    opacity: 0.35;
+    transition: opacity 0.3s ease, background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+.footer-charlie-portal::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #bdc9d8;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+}
+.footer-charlie-portal:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.10);
+}
+.footer-charlie-portal:hover::after {
+    width: 10px;
+    height: 10px;
 }
 
 .footer-content {
