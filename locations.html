@@ -9,6 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .office-card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .office-card-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+        }
+    </style>
 </head>
 <body>
 
@@ -151,6 +163,7 @@
             </div>
 
             <div class="cards-grid cards-three">
+                <a class="office-card-link" href="office-team.html?office=south">
                 <div class="card">
                     <div class="card-image" style="height: 200px;">
                         <img src="images/offices/King-William-St-London-2.jpg" alt="King William Street, London">
@@ -161,7 +174,9 @@
                         <p style="margin-top: 0.5rem;">0207 082 5650</p>
                     </div>
                 </div>
+                </a>
 
+                <a class="office-card-link" href="office-team.html?office=south">
                 <div class="card">
                     <div class="card-image" style="height: 200px;">
                         <img src="images/offices/Horsham.jpg" alt="Horsham, West Sussex">
@@ -172,7 +187,9 @@
                         <p style="margin-top: 0.5rem;">01403 456555</p>
                     </div>
                 </div>
+                </a>
 
+                <a class="office-card-link" href="office-team.html?office=north">
                 <div class="card">
                     <div class="card-image" style="height: 200px;">
                         <img src="images/offices/Leeds.webp" alt="Leeds">
@@ -183,6 +200,7 @@
                         <p style="margin-top: 0.5rem;">0113 539 9100</p>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </section>
