@@ -326,7 +326,7 @@ const PEOPLE = [
     {
         slug: 'gill-popple',
         name: 'Gill Popple',
-        role: 'Business Manager',
+        role: 'Office Manager',
         location: 'Leeds',
         photo: 'images/people/Gill Popple.jpg',
         office: {
@@ -336,7 +336,7 @@ const PEOPLE = [
             email: 'gill.popple@familycapital.co.uk'
         },
         summary: [
-            'Gill is Business Manager at the Leeds office, with over thirty years of experience in financial services and a highly client-focused approach. She combines strong technical knowledge with a quiet commitment to delivering a consistently high standard of service.',
+            'Gill is Office Manager at the Leeds office, with over thirty years of experience in financial services and a highly client-focused approach. She combines strong technical knowledge with a quiet commitment to delivering a consistently high standard of service.',
             'Her job is the bit clients don\'t see — but feel when it\'s missing. Client care, regulatory standards, and the day-to-day operational work that keeps the business running smoothly.'
         ],
         experience: [
@@ -348,8 +348,8 @@ const PEOPLE = [
     },
     {
         slug: 'ashley-rider',
-        name: 'Ashley Rider AFPS',
-        role: 'Chartered Financial Planner',
+        name: 'Ashley Rider DipPFS',
+        role: 'Financial Planner',
         location: 'Leeds',
         photo: 'images/people/Ashley Rider.jpg',
         office: {
@@ -359,14 +359,14 @@ const PEOPLE = [
             email: 'ashley.rider@familycapital.co.uk'
         },
         summary: [
-            'Ash is a Chartered Financial Planner at the Leeds office, working with clients at every stage of life — from those building wealth, through retirement planning, to inheritance and legacy.',
+            'Ash is a Financial Planner at the Leeds office, working with clients at every stage of life — from those building wealth, through retirement planning, to inheritance and legacy.',
             'With thirteen years in financial services, including six years as Head of North Advisory Sales at Schroders, he brings a useful combination of market insight and planning discipline.'
         ],
         experience: [
             'Ash spent the last six years as Head of North Advisory Sales for Schroders, working closely with advisers across the north of England. That gave him a clear view of the industry from the product side as well as the planning side — which turns out to be a useful perspective when helping clients think about investments, structure, and risk.',
             'He specialises in developing tailored wealth management strategies for individuals, families, and business owners — focusing on the long-term goals that matter most to each client, whether that\'s financial security, freedom, or passing something meaningful on.',
             'His approach combines strong market insight with disciplined risk management and a clear focus on the client\'s priorities. Retirement planning, investment growth, legacy planning, life transitions — each plan is aligned with what actually matters to the person it\'s being built for.',
-            'Ash is a Chartered Financial Planner.',
+            'Ash holds the Level 4 Diploma in Regulated Financial Planning (DipPFS).',
             '"I believe financial planning isn\'t just about numbers — it\'s about giving you the confidence and clarity to live life on your terms."'
         ]
     },
